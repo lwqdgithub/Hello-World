@@ -1,0 +1,1 @@
+document.log("我在外面");

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>追加和移除样式</title>
+<style type="text/css" >
+*{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	line-height: 28px;;
+}
+.title {font-size:14px; color:#03F; text-align: center; }
+.textddd{ padding:50px;}
+.content {background-color:#FFFF00; }
+.border {border:1px dashed #333; }
+</style>
+
+</head>
+<body>
+
+ <h2 class="title" >jQuery操作CSS</h2>
+ <p class="text">
+	 css()设置或返回样式属性<br>
+	 addClass()增加一个或多个类<br>
+	 removeClass()移除一个或多个类
+ </p>
+ <script src="js/jquery-1.12.4.js" ></script>
+ <script>
+	 $(document).ready(function(){
+	
+		$(".title").hover(
+			function (){
+				//console.log($(".text").hasClass("content"));
+				
+				//加一个判断条件，如果没有此样式则追 加样式
+				if(!$(".text").hasClass("content")){
+					//追加样式
+					$(".text").addClass("content");
+				}
+				
+				if(!$(".text").hasClass("textddd")){
+					$(".text").addClass("textddd");
+				}
+				
+				
+			},
+			function (){
+				//如果有此样式，则删除
+				if($(".text").hasClass("content")){
+					$(".text").removeClass("content");
+				}
+				
+				if($(".text").hasClass("textddd")){
+					$(".text").removeClass("textddd");
+				}
+			}
+			
+		);
+		
+			
+	 });
+
+ </script>
+</body>
+</html>

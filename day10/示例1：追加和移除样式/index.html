@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>追加和移除样式</title>
+<style type="text/css" >
+*{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	line-height: 28px;;
+}
+.title {font-size:14px; color:#03F; text-align: center; }
+.text333{ padding:50px;}
+.content {background-color:#FFFF00; }
+.border {border:1px dashed #333; }
+div{
+	width: 100;
+	height: 100;
+}
+</style>
+
+</head>
+<body>
+
+ <h2 class="title" >jQuery操作CSS</h2>
+ <p class="text">
+	 css()设置或返回样式属性<br>
+	 addClass()增加一个或多个类<br>
+	 removeClass()移除一个或多个类
+ </p>
+ <div>ddddd</div>
+ <script src="js/jquery-1.12.4.js" ></script>
+ <script>
+	 $(document).ready(function(){
+		
+		//最开始的时候  没有使用jquery之前如何设置样式
+		//document.getElementById("").style.backgroundColor="";
+		//学了jquery后
+		//$(".title").css("background-color","red");
+		
+		//今天通过追加样式
+		//$(".title").addClass("content");
+		
+		/*$(".title").hover(
+			function (){
+				$(".title").addClass("content text333");
+			},
+			function (){
+				$(".title").removeClass("content text333");
+			}
+			
+		);*/
+		
+		
+		$(".title").bind("click",function(){
+			
+			$(".text").toggleClass("text333  content");
+			
+		});
+	 });
+
+ </script>
+</body>
+</html>

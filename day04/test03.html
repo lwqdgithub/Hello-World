@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件</title>
+		<script>
+			function haha(){
+				alert("点击事件");
+			}
+			
+			function read(){
+				alert("页面全部加载完了");
+			}
+			//第二种方法当页面全部加载完之后执行的函数
+			onload = function (){
+				alert("加载完了，我要执行了窝！")
+			}
+		</script>
+	</head>
+	<!--<body onload="read();"> 当页面全部加载完之后执行的函数
+		这是第一种方式
+	-->
+	<body>
+		<!--点击事件-->
+		<input type="button"  value="点击事件" onclick="haha()" />
+	</body>
+</html>

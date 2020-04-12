@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数组</title>
+		<script>
+			/*java中的数组*/
+//			int[] num ={};
+//         创建js数组1
+           var num =new Array(5);
+           console.log(num.length);//输出数组长度
+           num[0] =10;
+           num[1] =20;
+           num[2] =30;
+           num[3] =40;
+           num[4] =50;
+           //js中数组长度可改变，java中会报错数组下标越界
+           num[5] =60;
+            console.log(num.length);//长度变6
+            
+            console.log(num[2]);//输出下标为2的数组
+            console.log(num);//输出所有值
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

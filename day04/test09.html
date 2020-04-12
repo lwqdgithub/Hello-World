@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>倒计时跳转</title>
+		<script>
+			var i =5;
+			setInterval("aaa()",1000);
+			
+			function aaa(){
+			var aa=	document.getElementById("aaa");
+				aa.innerHTML=i;
+				if(i==1){
+//					window.open("https://www.baidu.com/");这个跳转后还在倒数
+                    window.location.href=("https://www.baidu.com/");
+				}
+				i--;
+			}
+		</script>
+	</head>
+	<body>
+		在<font id="aaa"></font>秒后跳转
+	</body>
+</html>

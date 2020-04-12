@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style="font-weight: 900;">
+	<head lang="en" style="font-weight: 900;">
+    <meta charset="UTF-8" style="font-weight: 900;">
+    <title style="font-weight: 900;">图书简介</title>
+    <link rel="stylesheet" href="css/bookStyle1.css" style="font-weight: 900;">
+   <script src="js/jquery-1.12.4.js" style="font-weight: 900;"></script>
+
+<script style="font-weight: 900;">
+	
+	$(function(){
+		//标签选择器
+		$("dt").click(function(){
+			//显示dd的标签
+			$("dd").css("display","block");
+		});
+		//标签选择器
+		$("h1").css("color","blue");
+		
+		//类选择器
+		$(".price").css({"background-color":"#AAAAAA","padding":"5px"});
+		
+		//id选择器
+		$("#author").css("color","yellow");
+		
+		//并集选择器
+		$(".intro,dt,dd,#ticket").css("color","red");
+		
+		// 全局选择器，就是选择全部
+		$("*").css("font-weight","900");
+	});
+</script>
+</head>
+<body style="font-weight: 900;">
+<section id="book" style="font-weight: 900;">
+    <div class="imgLeft" style="font-weight: 900;"><img src="images/store.jpg" alt="岛上书店" style="font-weight: 900;"></div>
+    <div class="textRight" style="font-weight: 900;">
+        <h1 style="color: blue; font-weight: 900;">岛上书店【荐书联盟推荐】[The Storied Life of A.J.Fikry]</h1>
+        <p class="intro" style="color: red; font-weight: 900;">自营图书几十万畅销品种阶梯满减，抽奖赢魅蓝note3、JDRead阅读器！</p>
+        <p id="author" style="color: darkblue; font-weight: 900;">[美] 加·泽文（Gabrielle Zevin） 著；孙仲旭，李玉瑶 译</p>
+        <div class="price" style="background-color: rgb(170, 170, 170); padding: 5px; font-weight: 900;">
+            <div id="jdPrice" style="font-weight: 900;">京东价： <span style="font-weight: 900;">￥24.10</span> [6.9折] <p style="font-weight: 900;">[定价：<span style="font-weight: 900;">￥35.00</span>]</p> (降价通知)</div>
+            <p id="mobilePrice" style="font-weight: 900;">促销信息：<span style="font-weight: 900;">手机专享价</span> <span style="font-weight: 900;">￥9.90</span></p>
+            <dl style="font-weight: 900;">
+                <dt style="color: red; font-weight: 900;">以下促销可在购物车任选其一</dt>
+                <dd style="color: red; font-weight: 900;"><span style="font-weight: 900;">加价购</span> 满99.00元另加6.18元即可在购物车换购热销商品</dd>
+                <dd style="color: red; font-weight: 900;"><span style="font-weight: 900;">满减</span> 满100.00减20.00，满200.00减60.00，满300.00减100.00</dd>
+            </dl>
+            <p id="ticket" style="color: red; font-weight: 900;">领 券：<span style="font-weight: 900;">105-6</span>  <span style="font-weight: 900;">200-16</span></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+	

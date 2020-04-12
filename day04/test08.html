@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>指定时间后打开调用</title>
+		<script>
+		//延迟两秒打开窗口   只会打开一次
+			function open3(){
+				setTimeout("aa()",2000);
+			}
+			function aa(){
+				window.location.href="https://www.baidu.com/";
+			}
+			//每1秒钟打开一次
+			function open4(){
+				setInterval("bb()",1000);
+			}
+			function bb(){
+				console.log("每秒输出一次");
+			}
+		</script>
+	</head>
+	<body>
+		
+	<input type="button" value="打开3" onclick="open3();"/>
+	
+	<input type="button" value="打开4" onclick="open4();"/>
+	</body>
+</html>

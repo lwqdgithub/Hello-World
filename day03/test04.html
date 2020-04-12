@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>系统函数</title>
+		<script>
+			var str ="22.33";
+			console.log(typeof str);//string 类型
+			
+			//将字符串转换成number类型
+			var num =parseInt(str);
+			console.log(typeof num);//number 类型
+			console.log("转换后的值为"+num);//22
+			
+			//将字符串转换成number类型   带小数
+			var num2 =parseFloat(str);
+			console.log(typeof num2);//number 类型
+			console.log("转换后的值为"+num2);//22.33
+			
+			//检查参数是否为非数字
+//			var aa ="abc"; 是
+//			var aa ="111"; 不是
+            var aa =111;  //不是
+			console.log(isNaN(aa));//true
+			if(isNaN(aa)){
+				alert("是字符串");
+			}else{
+				alert("不是字符串");
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

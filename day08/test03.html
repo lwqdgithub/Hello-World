@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+    <meta charset="UTF-8">
+    <title>京东快报</title>
+    <link rel="stylesheet" href="css/newStyle.css">
+  	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  	<script>
+  		$(function(){
+  			
+  			//属性选择器
+  			$("#news a[class]").css("color","red");
+  			
+  			//等于 hot
+  			$("#news a[class='hot']").css("background-color","blueviolet");
+  			//不等于hot
+  			$("#news a[class!='hot']").css("font-size","20px");
+  			
+  			//指定以某些开头的  www
+  			$("#news a[href^='www']").css("color","burlywood");
+  			//以 html结尾的
+  			$("#news a[href$='html']").css("color","#B02F4A");
+  			
+  			//包含aspx
+  			$("#news a[href*='aspx']").css("background-color","yellow");
+  		});
+  	</script>
+</head>
+	<body>
+<section id="news">
+    <header>京东快报<a href="#" class="more" style="color: red; font-size: 20px;">更多 &gt; </a></header>
+    <ul>
+        <li><a href="sale.jd.com/act/h7mf8.html" class="hot" style="color: rgb(176, 47, 74); background-color: yellow;"><span>[618]</span>志玲姐姐：墨镜300减30</a></li>
+        <li><a href="www.jd.com/news.aspx?id=29257" style="font-size: 20px; color: burlywood; background-color: rgb(0, 0, 255);"><span>[公告]</span>京东无锡馆正式启动</a></li>
+        <li><a href="sale.jd.com/act/k2ad45v.html" style="font-size: 20px; color: rgb(176, 47, 74);"><span>[特惠]</span>99元抢平板！品牌配件199-100</a></li>
+        <li><a href="www.jd.com/news.aspx?id=29252" style="font-size: 20px; color: burlywood; background-color: rgb(0, 0, 255);"><span>[公告]</span>节能领跑京东先行</a></li>
+        <li><a href="sale.jd.com/act/ugk2937w.html" class="last" style="color: rgb(176, 47, 74); font-size: 20px;"><span>[特惠]</span>高洁丝实力撩货，领券五折</a></li>
+    </ul>
+</section>
+
+
+</body>
+</html>

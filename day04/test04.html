@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标移动事件</title>
+		<script>
+			function move(){
+				alert("移进来了");
+			}
+			function out(){
+				alert("移出去了");
+			}
+			
+			
+			function ccc(){
+				alert("触发了")
+			}
+			
+			function ccc2(obj){
+				console.log(obj);//输出带有this的标签
+				console.log(obj.value);//输出标签的值
+				console.log(obj.id);//输出标签的id
+				console.log(obj.name);//输出标签的name
+//				alert(obj)
+			}
+			
+			function ccc3(val){
+				console.log(val);
+			}
+		</script>
+	</head>
+	<body>
+		
+		<!--onmousemove="move();" 移入事件
+		     onmouseout="out();"  移出事件 -->    
+		<div style="width: 200px; height: 100px; background-color: blueviolet;"
+		onmousemove="move();"onmouseout="out();">
+			div块
+		</div>
+		
+		
+		<!--当值改变后立即触发的事件-->
+		<input value="bbb" onchange="ccc();"/>
+		
+		<input id="lll" name="haha" value="ooo" onchange="ccc2(this);"/>
+		<!--指定接收-->
+		<input value="lalala" onchange="ccc3(this.value);"/>
+	</body>
+</html>

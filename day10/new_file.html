@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+				div{
+					width: 100px;
+					height: 100px;
+					background-color: hotpink;
+				}
+			
+		</style>
+
+		<script src="jquery-1.8.3.min.js" ></script>
+		<script>
+			$(function(){
+				$("div").toggle(function(){
+					$("div").css("background-color","green");
+				},function(){
+					$("div").css("background-color","red");
+				},function(){
+					$("div").css("background-color","yellow");
+				});
+
+			});
+			
+		</script>
+	</head>
+	<body>
+		 <div>ddddd</div>
+	</body>
+</html>

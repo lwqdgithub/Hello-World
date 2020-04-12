@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			
+			div{
+				display: none;/*隐藏*/
+			}
+			
+			.dddd{
+				display:block;
+			}
+		</style>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script>
+			/*$(function(){});*/
+			jQuery(function(){
+				//点击事件
+				/*$("h2").click(function(){
+					$("div").addClass("dddd");
+					//显示效果
+					//$("div").css("display","block");
+				});*/
+				
+				
+				/*$("h2").mousemove(function(){
+   				
+	   				//移入进去的时候把所有子节点全部显示
+	   				$("div").addClass("dddd");
+	   			}).mouseout(function(){
+	   				
+	   				//hide 隐藏
+	   				$("div").css("display","none");
+	   			});*/
+	   			
+	   			//click是onclick简写，点击事件
+	   	          $("h2").click(function(){
+	   				$("div").addClass("dddd");
+	   				//next()下面字体颜色受影响
+					$("h2").css("background-color","red").next().css("color","yellow");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h2>你喜欢什麼</h2>
+		<div>
+			<p>華為</p>
+			<p>諾基亞</p>
+			<p>黑莓</p>
+		</div>
+	
+
+</body>
+</html>

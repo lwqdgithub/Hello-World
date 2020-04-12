@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.js" ></script>
+		
+		<script>
+			
+			//没有学jquery之前是这样给元素添加值的
+			function aa(){
+				//div是这样的  添加值
+				//document.getElementById("ddd1").innerHTML="<h2>添加了一个值</h2>";
+				//如果元素中有value 属性的  添加值
+				//document.getElementById("aaa1").value="刚添加的";
+				
+				//删除是这样的
+				/*document.getElementById("ddd1").innerHTML="";
+				document.getElementById("aaa1").value="";*/
+			}
+			
+			
+			//使用jquery之后
+			
+			$(function(){
+				
+				//添加值
+				$("#ddd1").html("<h1>这是jquery方式</h1>");
+				$("#aaa1").val("添加的值");
+				
+				//删除是这样的
+				/*$("#ddd1").html("");//空即是删除
+				$("#aaa1").val("");*/
+			});
+			
+			
+		</script>
+	</head>
+	<body onload="aa();">
+		
+		<div id="ddd1">ccc</div>
+		<input id="aaa1"  value="ddddd"/>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dom-获取节点元素</title>
+<script type="text/javascript">
+	//onload就是页面加载完之后执行
+	onload=function(){
+		
+		
+		//获取a标签的节点
+		var  aa =document.getElementById("ID");
+		console.log(aa);
+		
+		//获取父节点 
+		var parent=aa.parentNode;//form
+		console.log(parent);
+		
+		//获取第一个子元素
+		var firstElement=parent.firstElementChild;
+		console.log(firstElement);
+		//获取最后一个子元素
+		var lastElement=parent.lastElementChild;
+		console.log(lastElement);
+		
+		//获取下一个元素
+		var nextElement=aa.nextElementSibling;
+		console.log(nextElement);
+		
+		//获取上一个元素
+		var previousElement=aa.previousElementSibling;
+		console.log(previousElement);
+		
+	}
+	
+	//当页面完成加载时，执行的 
+	/*function loadInfo(){
+		var a1 = document.getElementById("ID");
+		console.log(a1);
+	}*/
+</script>
+	</head>
+	<body>
+		<form>
+			<input value="是它吗">
+			
+				<a id="ID"><strong></strong></a>
+			
+			<font></font>
+			<input type="button" id="but" value="点击" onclick="checka();">
+		</form>--&gt;
+		
+		<!--<form><input></input><tr><a id="ID"><strong></strong></a></tr><font></font></form>-->
+	
+
+</body>
+</html>

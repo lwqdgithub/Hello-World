@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>引用外部js</title>
+		<!--相对路劲带有..开发中不使用，因为会引发很多问题-->
+		
+		<!--这是绝对路径-->
+		<script src="js/my.js"></script>
+		<script>
+		/*public void add(){
+			这是java中的方法
+		}*/
+			/*js中的方法也叫函数*/
+			function check(){
+				alert("我跟着");
+			}
+		</script>
+	</head>
+	<body>
+		<!--onclick鼠标点击事件-->
+		<input type="button" onclick="javascript:alert('我弹')" value="点我试试" />
+		<input type="button" onclick="check()" value="我跟着" />
+	</body>
+</html>

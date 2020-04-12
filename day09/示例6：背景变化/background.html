@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>背景颜色变化</title>
+    <style type="text/css">
+        .red{
+            font-size: 28px;
+            color: red;
+        }
+        div{
+        	width: 100px;
+        	height: 100px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="点我吧">
+<p>我一会显示一会隐藏</p>
+<div>dddd</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		//设置点击事件
+		/*$("div").click(function(){
+			$("div").css("background-color","#0000CC");
+		});*/
+		
+		//$("div").toggle();
+		
+		/*$("div").toggle(
+			
+			function(){},
+			function(){},
+			function(){}
+			
+		);*/
+		
+		$("div").toggle(
+			
+			function(){
+				$("div").css("background-color","#0000CC");
+			},
+			function(){
+				$("div").css("background-color","burlywood");
+			},
+			function(){
+				$("div").css("background-color","red");
+			},
+			function(){
+				$("div").css("background-color","#4DC83A");
+			}
+			,
+			function(){
+				$("div").css("background-color","yellow");
+			}
+			
+		);
+		
+   });
+</script>
+</body>
+</html>

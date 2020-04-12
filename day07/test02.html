@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+    <meta charset="UTF-8">
+    <title>左导航菜单</title>
+    <style type="text/css">
+        li{list-style: none; line-height: 22px; cursor: pointer;}
+        .aaaa{
+        	background-color: yellow;
+        	color: gray;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.js" type="text/javascript"></script>
+	
+	<script>
+		
+		$(function(){
+			
+			
+			//给元素绑定事件  
+			//document.getElementById("idd");   同等于  $("#idd")
+			//给  <li id="idd" onclick="">你喜欢的明星有哪些</li> 绑定了一个事件  onclick
+			//第一步 $("#idd").click();
+			//第二步$("#idd").click(function(){});
+			$("#idd").click(function(){
+				
+				//设置样式  第一种方式 
+				//改变样式效果  本来上面已经设置好了的   
+				//$("#idd").addClass("aaaa");
+				
+				//设置样式   第二种方式
+				/*$("#idd").css("background-color","red");
+				$("#idd").css("color","yellow");*/
+				
+				//设置样式   第三种方式
+				//$("#idd").css("background-color","red").css("color","yellow");
+				
+				
+				//设置样式   第四种方式，数组
+				$("#idd").css({"background-color":"red","color":"yellow"});
+			});
+			
+			
+			$("#iddd").blur(function(){
+				alert("失去焦点事件");
+			});
+			
+			
+			$("#idccc").click(function(){
+				alert("綁定事件");
+			});
+			
+		});
+	</script>
+</head>
+	<body>
+<ul>
+	<!--当鼠标放在li 点击一个切换样式-->
+	<li id="idd" onblur="">你喜欢的明星有哪些</li>
+	<li>王宝强</li>
+	<li>马蓉</li>
+	<li id="idccc">等</li>
+	<input id="iddd">
+</ul>
+
+
+</body>
+</html>

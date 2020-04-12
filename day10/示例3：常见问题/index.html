@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="css/problem.css">
+    <script src="js/jquery-1.12.4.js" ></script>
+<script>
+
+	$(document).ready(function(){
+		$("h1").bind("click",function(){
+			var str = "<ul><li>产品1</li><li>产品2</li><li>产品33</li></ul>";
+			$(".proList").html(str);
+		});
+		$("span").click(function(){
+			$(".proList").html("");
+		});
+		
+	/*	$("h1").bind("click",function(){
+			var str = "<ul><li>产品1</li><li>产品2</li><li>产品3</li></ul>";
+			$(".proList").text(str);
+		});
+		$("span").click(function(){
+			$(".proList").text("");
+		});*/
+	});
+
+</script>
+</head>
+<body>
+<section>
+    <span>×</span>
+    <h1>常见问题</h1>
+    <div class="proList"></div>
+<div class="img"><img src="images/boy.png"></div>
+
+<!--<ul><li>产品1</li><li>产品2</li><li>产品3</li></ul>-->
+</section>
+
+</body>
+</html>

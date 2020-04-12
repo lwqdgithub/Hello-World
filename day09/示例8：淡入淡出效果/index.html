@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>淡入淡出效果</title>
+	<style>
+		body{text-align: center;}
+	</style>
+</head>
+<body> 
+
+<img src="images/ad.jpg"  /><br/>
+<input name="fadein_btn" type="button" value="淡入" /> 
+<input name="fadeout_btn" type="button" value="淡出" />
+<script  src="js/jquery-1.12.4.js" ></script>
+<script>
+	$(document).ready(function() {
+		//通过属性选择器选择
+		//$("input[name=fadeout_btn]").click();
+		//$("input[name=fadeout_btn]").bind("",function(){})
+		
+		$("input[name=fadein_btn]").click(function(){
+			//淡入
+			//$("img").fadeIn();
+			$("img").fadeIn(2000);
+		});
+		
+		$("input[name=fadeout_btn]").bind("click",function(){
+			//淡出
+			//$("img").fadeOut();
+			//$("img").fadeOut(2000);
+			$("img").fadeOut(2000,function(){
+				alert("执行完后所执行的");
+			});
+		});
+	});
+</script>
+</body>
+</html>

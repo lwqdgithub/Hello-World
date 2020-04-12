@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>仿冬奥列表内容</title>
+	 <link rel="stylesheet" href="css/games.css">
+	 <script src="js/jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			
+//			$(".contain :header").css("background-color","blue").css("color","white");
+			
+			//第一个
+//			$(".contain li:first").css("color","red");
+			//最后一个
+//			$(".contain li:last").css("color","yellow");
+			//奇数
+//			$(".contain li:odd").css("background-color","gray");
+			//偶数
+//			$(".contain li:even").css("background-color","gold");
+//      注意以下坐标从0开始
+			//选取索引小于4的<li>元素（注：小于4，不包括4）
+			
+//			$(".contain li:lt(4)").css("background-color","yellow");
+
+			//选取索引大于2的<li>元素（注：大于2，不包括2）
+
+//			$(".contain li:gt(2)").css("background-color","gray");
+      //选取索引等于3的<li>元素
+        $(".contain li:eq(3)").css("background-color","yellow");
+		});
+	</script>
+ </head>
+ <body>
+	<div class="contain">
+		<h2 style="background-color: blue; color: white;">祝福冬奥</h2>
+		<ul>
+			<li style="color: red;"> 贝克汉姆：衷心希望北京能够申办成功！</li>
+			<li> 姚明：北京申冬奥是个非常棒的机会！加油！</li>
+			<li> 张虹：北京办冬奥，大家的热情定超乎想象！ </li>
+			<li style="background-color: gray;"> 肖恩怀特：我爱北京，支持北京申办冬奥会！</li>
+			<li style="background-color: gray;"> 赵宏博：北京申办冬奥会是再合适不过了！</li>
+			<li style="color: yellow; background-color: gray;"> 你喜欢哪些冬季运动项目？(点击进入调查页)</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

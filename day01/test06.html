@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字符串</title>
+		<script>
+			
+			var str ="hello world hello script";
+			console.log(str.length);//返回字符串长度
+			console.log(str.charAt(2));//查找下标为2的字符
+			var aa =str.charAt(4);//定义变量去接收返回
+			console.log(aa);
+			console.log(str.substring(2,5));//查找下标从2到5的字符
+			//切割
+			var str ="1001,1002,1003,1004";
+			var strs =str.split(",");
+			/*实际开发中输出不会这样写死
+			console.log(strs[0]);//1001
+			console.log(strs[1]);//1002
+			console.log(strs[2]);//1003
+			console.log(strs[3]);//1004*/
+			//java中的遍历
+			/*for(int i =0;i<strs.length;i++){
+				strs[i]
+			}*/
+			//js中的遍历输出
+			for(var i=0;i<strs.length;i++){
+				console.log(strs[i])
+			}
+			//不要var这样也可以的
+			for(i=0;i<strs.length;i++){
+				console.log(strs[i])
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
